@@ -13,6 +13,7 @@
 		107DE69D2609237E000A6391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107DE69B2609237E000A6391 /* Main.storyboard */; };
 		107DE69F26092382000A6391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 107DE69E26092382000A6391 /* Assets.xcassets */; };
 		107DE6A226092382000A6391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107DE6A026092382000A6391 /* LaunchScreen.storyboard */; };
+		107DE6AB2609242F000A6391 /* CountryCodePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE6AA2609242E000A6391 /* CountryCodePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		107DE69E26092382000A6391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		107DE6A126092382000A6391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		107DE6A326092382000A6391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		107DE6AA2609242E000A6391 /* CountryCodePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCodePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				107DE6952609237E000A6391 /* AppDelegate.swift */,
 				107DE6972609237E000A6391 /* SceneDelegate.swift */,
 				107DE6992609237E000A6391 /* ViewController.swift */,
+				107DE6AA2609242E000A6391 /* CountryCodePickerViewController.swift */,
 				107DE69B2609237E000A6391 /* Main.storyboard */,
 				107DE69E26092382000A6391 /* Assets.xcassets */,
 				107DE6A026092382000A6391 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107DE6AB2609242F000A6391 /* CountryCodePickerViewController.swift in Sources */,
 				107DE69A2609237E000A6391 /* ViewController.swift in Sources */,
 				107DE6962609237E000A6391 /* AppDelegate.swift in Sources */,
 				107DE6982609237E000A6391 /* SceneDelegate.swift in Sources */,
