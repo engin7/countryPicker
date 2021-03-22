@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController, CountryCodePickerDelegate {
     
     func countryCodePickerViewControllerDidPickCountry(_ country: CountryCodePickerViewController.Country) {
-         
+        print(country.name)
     }
     
 
