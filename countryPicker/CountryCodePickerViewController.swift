@@ -62,11 +62,12 @@ public class CountryCodePickerViewController: UITableViewController {
         self.title = NSLocalizedString("PhoneNumberKit.CountryCodePicker.Title", value: "Choose your country", comment: "Title of CountryCodePicker ViewController")
 
         tableView.register(Cell.self, forCellReuseIdentifier: Cell.reuseIdentifier)
-        tableView.contentInset = UIEdgeInsets(top: 0, left: -40, bottom: 0, right: 0);
+        tableView.contentInset = UIEdgeInsets(top: -10, left: 0, bottom: 0, right: 0);
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.backgroundColor = .clear
         navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
         definesPresentationContext = true
     }
 
@@ -107,7 +108,7 @@ public class CountryCodePickerViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: Cell.reuseIdentifier, for: indexPath)
         let country = self.country(for: indexPath)
 
-        cell.textLabel?.text = country.flag
+        cell.textLabel?.text =  country.flag
         cell.detailTextLabel?.text = country.name
 
         cell.textLabel?.font = .preferredFont(forTextStyle: .callout)
@@ -207,6 +208,15 @@ public extension CountryCodePickerViewController {
 
         required init?(coder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
+        }
+        
+        public override func layoutSubviews() {
+            super.layoutSubviews()
+            let size = self.bounds.size
+            let textLabelFrame = CGRect(x: 20, y: 0, width: 44, height: size.height)
+            self.textLabel?.frame =  textLabelFrame
+            let detailLabelFrame = CGRect(x: 80, y: 0, width: size.width-100, height: size.height)
+            self.detailTextLabel?.frame =  detailLabelFrame
         }
     }
 }
